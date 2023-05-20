@@ -21,6 +21,7 @@ async function showPosition(position) {
     let dst = data.results[0].timezone.offset_DST;
     let dstsec = data.results[0].timezone.offset_DST_seconds;
     let country = data.results[0].country;
+    let postcode = data.results[0].postcode;
     let city = data.results[0].city;
     uppercontainer.innerHTML =`<div>Name Of Time Zone : ${name}</div>
                                 <div class="lonspan"><span>Lat : ${lat}</span><span>Long : ${long}</span></div>
@@ -29,6 +30,7 @@ async function showPosition(position) {
                                 <div>Offset DST : ${dst}</div
                                 <div>Offset DST Seconds : ${dstsec}</div>
                                 <div>Country : ${country}</div>
+                                <div>postcode : ${postcode}</div>
                                 <div>City : ${city}</div>`;
   }
   else {
